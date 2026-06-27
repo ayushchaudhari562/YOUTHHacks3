@@ -159,21 +159,21 @@ const isListening = status === "Listening...";
 
   <button
     onClick={() => handleVoiceInput("BLOCK_CARD")}
-    className="px-4 py-2 rounded-full bg-blue-50 text-blue-700 border border-blue-100"
+    className="px-4 py-2 rounded-full bg-blue-50 text-blue-700 border border-blue-100 cursor-pointer"
   >
     My card is lost
   </button>
 
   <button
     onClick={() => handleVoiceInput("BALANCE")}
-    className="px-4 py-2 rounded-full bg-green-50 text-green-700 border border-green-100"
+    className="px-4 py-2 rounded-full bg-green-50 text-green-700 border border-green-100 cursor-pointer"
   >
     Check my balance
   </button>
 
   <button
     onClick={() => handleVoiceInput("FRAUD")}
-    className="px-4 py-2 rounded-full bg-orange-50 text-orange-700 border border-orange-100"
+    className="px-4 py-2 rounded-full bg-orange-50 text-orange-700 border border-orange-100 cursor-pointer"
   >
     Fraud Help
   </button>

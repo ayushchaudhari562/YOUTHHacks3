@@ -8,10 +8,6 @@ export const getUser = () => {
   return user ? JSON.parse(user) : null;
 };
 
-export const isAuthenticated = () => {
-  return localStorage.getItem("user") !== null;
-};
-
 export const login = (user) =>{
   localStorage.setItem("currentUser" , JSON.stringify(user))
 }
@@ -20,6 +16,10 @@ export const getCurrentUser = () =>{
   const user = localStorage.getItem("currentUser");
   return user ? JSON.parse(user) : null;
 }
+
+export const isAuthenticated = () => {
+  return localStorage.getItem("currentUser") !== null;
+};
 
 export const logout = () =>{
   localStorage.removeItem("currentUser")
